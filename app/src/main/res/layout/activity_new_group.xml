@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NewGroup">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:layout_height="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Group"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Add Subject">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/groupName"
+            android:hint="Enter Group Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Provide a group Subject and Name">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="@android:color/holo_blue_light"
+        android:src="@drawable/ic_baseline_check_24"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>

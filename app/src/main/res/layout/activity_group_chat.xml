@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DDCFCF"
+    tools:context=".ChattingDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/userName"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:inputType="textCapSentences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mohit">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/status"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Click for group description">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/addParticipants"
+            android:layout_marginEnd="10sp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_baseline_group_add_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/chats"
+        android:layout_marginBottom="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="?actionBarSize">
+
+
+        <EditText
+            android:id="@+id/message"
+            android:hint="Enter Message"
+            android:layout_weight="0.5"
+            android:paddingStart="15dp"
+            android:background="@drawable/send_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:background="@android:drawable/ic_menu_send"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

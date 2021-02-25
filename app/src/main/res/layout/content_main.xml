@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include layout="@layout/activity_dashboard">
+
+    </include>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/allchats"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="@android:color/holo_blue_light"
+        android:src="@drawable/ic_baseline_message_24"
+        android:layout_gravity="bottom|right"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

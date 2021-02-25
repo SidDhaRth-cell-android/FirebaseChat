@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:id="@+id/mainLayout"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/newMessage"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="20dp"
+        android:background="@drawable/badges"
+        android:layout_height="20dp">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_person_24">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:text="Siddharth"
+            android:autoText="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:autoText="true"
+            android:text="Hey, I am using Messenger here"
+            android:id="@+id/lastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:autoText="true"
+            android:text="status"
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

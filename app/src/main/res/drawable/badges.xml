@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid
+        android:color="@android:color/holo_blue_light">
+
+    </solid>
+
+    <padding
+        android:top="100dp"
+        android:bottom="100dp">
+
+    </padding>
+
+
+
+
+</shape>

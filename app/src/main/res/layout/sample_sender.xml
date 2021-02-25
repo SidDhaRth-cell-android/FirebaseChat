@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/sender_bg"
+        android:maxWidth="310dp"
+        android:minHeight="30dp"
+        app:layout_constraintGuide_begin="16dp">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="21dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/senderText"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="wrap_content"
+            android:maxWidth="270dp"
+            android:autoText="true"
+            android:minWidth="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="textLongMessage|textMultiLine"
+            android:layout_marginEnd="8dp"
+            android:text="This is message"
+            app:layout_constraintBottom_toTopOf="@+id/senderTime"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <TextView
+            android:id="@+id/senderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginBottom="3dp"
+            android:autoText="true"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_below="@id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_marginEnd="20dp"
+            android:textSize="12sp"
+            android:autoText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered">
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
